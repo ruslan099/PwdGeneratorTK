@@ -6,6 +6,10 @@ root = tk.Tk()
 root.title("Password Generator v1.0")
 root.geometry("350x220")
 
+icon = tk.PhotoImage(file="icon.png") # Создаем переменную и помещаем в нее наше фото
+root.iconphoto(False, icon) # Меняем стандартный значек на тот что в переменной
+root.resizable(False, False)# Зарет на расширения окна
+
 def gen():
     pwd_ent.delete(0, END)
     stat_ent.delete(0, END)
